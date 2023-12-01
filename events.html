@@ -82,45 +82,25 @@
           <div class="js-slider">
             <figure class="js-slider_item img-1">
               <div class="js-slider_img">
-                <img class="c-img-w-full" src="./resources/media/img/WEBSITE PHOTOS/group1.jpg" alt="">
+                <img class="c-img-w-full " src="./resources/media/img/pICS/event1.png" alt="">
               </div>
               <figcaption class="wo-caption">
                 <h3 class="wo-h3">
-                  <div class="c-label">LICEO</div>
-                  <br class="view-sm mb-s">College of Information Technology</h3>
+                  <div class="c-label">LDCU</div>
+                  <br class=" view-sm mb-s "> <span class=" header-title ">College of Information Technology </span> </h3>
               </figcaption>
             </figure>
-            <figure class="js-slider_item img-2">
-              <div class="js-slider_img">
-                <img class="c-img-h-full" src="./resources/media/img/WEBSITE PHOTOS/group2.jpg" alt="">
-              </div>
-              <figcaption class="wo-caption">
-                <h3 class="wo-h3">
-               
-                  <br class="view-sm mb-s">College of Information Technology</h3>
-              </figcaption>
-            </figure>
-            <figure class="js-slider_item img-3">
-              <div class="js-slider_img">
-                <img class="c-img-h-full" src="./resources/media/img/WEBSITE PHOTOS/group3.jpg" alt="">
-              </div>
-              <figcaption class="wo-caption">
-                <h3 class="wo-h3">
-                  <div class="c-label">LICEO</div>
-                  <br class="view-sm mb-s">College of Information Technology</h3>
-              </figcaption>
-            </figure>
+        
+          
             <div class="js-slider_nav">
-              <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
-              <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
-              <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
-              <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
-              <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
-              <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+              <label class="js-slider_nav_item s-nav-1 prev" ></label>
+              <label class="js-slider_nav_item s-nav-1 next" ></label>
+              
             </div>
             <div class="js-slider_indicator">
-              <div class="js-slider-indi indi-1" for="s-1"></div>
-              <div class="js-slider-indi indi-2" for="s-2"></div>
+              <div class="js-slider-indi " for="s-1"></div>
+              <div class="js-slider-indi " for="s-2"></div>
+              <div class="js-slider-indi indi-3" for="s-3"></div>
               <div class="js-slider-indi indi-3" for="s-3"></div>
             </div>
           </div>
@@ -140,16 +120,63 @@
      
 
       let i = 1;
+      let prev = document.querySelector(`.prev`)
+      let next = document.querySelector(`.next`)
+      let titleHead = document.querySelector(".header-title")
+      let imageSrc = document.querySelector(".c-img-w-full")
+
+      myImages = [
+        {
+          "src":"./resources/media/img/pICS/event1.png",
+          "title":"IT INNOVEATION SUMMIT"
+        },
+        {
+          "src":"./resources/media/img/pICS/event2.png",
+          "title":"Tech Talk"
+        },
+        {
+          "src":"./resources/media/img/pICS/event3.png",
+          "title":"THackathon"
+        },
+        {
+          "src":"./resources/media/img/pICS/event4.png",
+          "title":"Motivation"
+        },
+      ]
+
+      max = 4
+      i=2
+      prev.addEventListener('click',()=>{
+   
+        i--
+        if (i+1<=0) {
+          i = myImages.length -1
+          
+        }
+        console.log(myImages[i].title)
+        imageSrc.src= myImages[i].src
+        titleHead.textContent =  myImages[i].title
+
+        
+      })
+
+      next.addEventListener('click',()=>{
+        i++
+        if (i>= myImages.length -1) {
+          i = 0
+          
+        }
+        console.log(myImages[i].title)
+        imageSrc.src= myImages[i].src
+        titleHead.textContent =  myImages[i].title
+        
+      })
 
       setInterval(()=>{
-        let autobtnclk = document.querySelector(`.s-nav-${i}`)
-        autobtnclk.click()
+     
+        next.click()
        
-        console.log(`.s-nav-${i}`)
-        if (i==3) {
-          i=0
-        }
-        i++;
+        
       },4000)
      
     </script>

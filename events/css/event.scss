@@ -128,29 +128,7 @@ $blue : #0d152b;
             display: flex;
             align-items: center;
             justify-content: center;
-            p{
-                position: relative;
-                font-family: 'Righteous', sans-serif;
-                z-index: 1;
-                display: flex;
-                align-self: center;
-                color: $white;
-                font-size: 100px;
-                font-weight: 300;
-                text-align: center;
-                text-transform: capitalize;
-                filter: drop-shadow(2px 1px 10px $black);
-                transform: translateY(-20%);
-            }
-            img{
-              
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit:cover;
-               
-
-            }
+            
         }
 
     }
