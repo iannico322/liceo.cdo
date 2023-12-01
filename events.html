@@ -23,7 +23,10 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="./homepage/css/homepage.css">
+    <link rel="stylesheet" href="./events/css/event.css">
+    <link rel="stylesheet" href="./events/css/slider.css">
+
+
     <title>Liceo de Cagayan University</title>
   </head>
 
@@ -72,33 +75,83 @@
           </ul>
         </nav>
         <main class="animate__animated animate__fadeInUp animate__delay-1s" >
-          <p class=" animate__animated animate__fadeInUp animate__delay-2s"">college of information technology</p>
-          <img src="./resources/media/img/WEBSITE PHOTOS/citc-bg.jpg" alt="">
+          <div class="carousel">
+          <input type="radio" id="s-1" name="slider-control" checked="checked">
+          <input type="radio" id="s-2" name="slider-control" for="s-3">
+          <input type="radio" id="s-3" name="slider-control">
+          <div class="js-slider">
+            <figure class="js-slider_item img-1">
+              <div class="js-slider_img">
+                <img class="c-img-w-full" src="./resources/media/img/WEBSITE PHOTOS/group1.jpg" alt="">
+              </div>
+              <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+                  <div class="c-label">LICEO</div>
+                  <br class="view-sm mb-s">College of Information Technology</h3>
+              </figcaption>
+            </figure>
+            <figure class="js-slider_item img-2">
+              <div class="js-slider_img">
+                <img class="c-img-h-full" src="./resources/media/img/WEBSITE PHOTOS/group2.jpg" alt="">
+              </div>
+              <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+               
+                  <br class="view-sm mb-s">College of Information Technology</h3>
+              </figcaption>
+            </figure>
+            <figure class="js-slider_item img-3">
+              <div class="js-slider_img">
+                <img class="c-img-h-full" src="./resources/media/img/WEBSITE PHOTOS/group3.jpg" alt="">
+              </div>
+              <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+                  <div class="c-label">LICEO</div>
+                  <br class="view-sm mb-s">College of Information Technology</h3>
+              </figcaption>
+            </figure>
+            <div class="js-slider_nav">
+              <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+              <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+              <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+              <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+              <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+              <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+            </div>
+            <div class="js-slider_indicator">
+              <div class="js-slider-indi indi-1" for="s-1"></div>
+              <div class="js-slider-indi indi-2" for="s-2"></div>
+              <div class="js-slider-indi indi-3" for="s-3"></div>
+            </div>
+          </div>
+
+          </div>
 
         </main>
 
       </div>
-      <div class="page2 hidden">
-        <div class=" hidden animate__animated animate__fadeInUp ">
-          <h1>college of <br> information technology</h1>
-          <h2>CENTER OF DEVELOPMENT <br>PACUCOA LEVEL || RE-ACCREDITED STATUS</h2>
-          <p>for Information Technology</p>
-        </div>
-        
-        <img src="./resources/media/img/WEBSITE PHOTOS/citc-page.jpg" alt="">
-      </div>
-
-
-      <div class="page3 hidden">
-		<img src="./resources/media/img/WEBSITE PHOTOS/it-promo.jpg" alt="">
-	
-        
-      </div>
-      
+            
         
 
     </div>
 
     <script src="resources/js/main.js"></script>
+    <script>
+     
+
+      let i = 1;
+
+      setInterval(()=>{
+        let autobtnclk = document.querySelector(`.s-nav-${i}`)
+        autobtnclk.click()
+       
+        console.log(`.s-nav-${i}`)
+        if (i==3) {
+          i=0
+        }
+        i++;
+      },4000)
+     
+    </script>
   </body>
 </html>
