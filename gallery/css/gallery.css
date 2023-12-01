@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Merriweather&family=Raleway:wght@300;400;500;600;800&family=Righteous&display=swap");
+.homepage-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.page1 {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.page1 .homepage-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  height: 95px;
+  width: 95%;
+  background-color: #ffffff;
+}
+
+.page1 .homepage-header .left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page1 .homepage-header .left img {
+  height: 80%;
+  object-fit: contain;
+}
+
+.page1 .homepage-header .left div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.page1 .homepage-header .left div h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.page1 .homepage-header .left div p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.page1 .homepage-header .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page1 .homepage-header .right div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.page1 .homepage-header .right div span {
+  color: #5c0d0a;
+}
+
+.page1 .homepage-header .right div p {
+  font-size: 13px;
+}
+
+.page1 .homepage-nav {
+  width: 100%;
+  background-color: #5c0d0a;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 .homepage-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 90%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.page1 .homepage-nav ul .more-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 .homepage-nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 5px  10px;
+}
+
+.page1 .homepage-nav ul a:hover {
+  color: rgba(255, 148, 148, 0.475);
+}
+
+.page1 main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page1 main .banner {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.page1 main .content {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.page1 main .content .top {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 main .content .top h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #8d221c;
+}
+
+.page1 main .content .buttom-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.page1 main .content .buttom-content .photo {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.page2 {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+}
+
+.page2 .buttom-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.page2 .buttom-content .photo {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.page3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+}
+
+.page3 .buttom-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.page3 .buttom-content .photo {
+  position: relative;
+  width: 70%;
+  object-fit: contain;
+  margin-bottom: 100px;
+}
+
+.page3 footer {
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #5c0d0a;
+}
+
+.page3 footer p {
+  font-weight: 200;
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  color: #ffffff;
+}
+
+.page4 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #800000;
+}
+
+.page4 .poster {
+  height: 100%;
+  object-fit: contain;
+}
+
+.page4 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.page4 div .logo {
+  width: 100%;
+  padding: 0 20px;
+  object-fit: contain;
+}
+
+.page5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #20202d;
+  font-family: 'Righteous', sans-serif;
+}
+
+.page5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+@media (max-width: 869px) {
+  .page1 .homepage-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    height: 95px;
+    width: 95%;
+    background-color: #ffffff;
+  }
+  .page1 .homepage-header .left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .page1 .homepage-header .left img {
+    height: 80%;
+    object-fit: contain;
+  }
+  .page1 .homepage-header .left div h1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .page1 .homepage-header .left div p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .page1 .homepage-header .right div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .page1 .homepage-header .right div span {
+    color: #5c0d0a;
+  }
+  .page1 .homepage-header .right div p {
+    font-size: 13px;
+  }
+  .page1 .homepage-nav {
+    width: 100%;
+    background-color: #5c0d0a;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page1 .homepage-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 90%;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .page1 .homepage-nav ul .more-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page1 .homepage-nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px  10px;
+  }
+  .page1 .homepage-nav ul a:hover {
+    color: rgba(255, 148, 148, 0.475);
+  }
+  .page1 main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page1 main p {
+    font-size: 90px;
+    font-weight: 300;
+  }
+  .page2 div {
+    color: #ffffff;
+  }
+  .page2 div h1 {
+    margin-top: 15%;
+    font-size: 70px;
+    font-size: 600;
+  }
+  .page2 div h2 {
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+  }
+  .page2 div p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}

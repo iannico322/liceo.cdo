@@ -1,0 +1,376 @@
+$white : #ffffff;
+$maron : #5c0d0a;
+$black: #20202d;
+$blue : #0d152b;
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Merriweather&family=Righteous&display=swap');
+.homepage-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    width: 100vw;
+   
+    flex-direction: column;
+}
+    .page1{
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: $white;
+
+
+     
+        .homepage-header{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-self: center;
+            height: 95px;
+            width: 95%;
+            background-color: $white;
+            
+            .left{
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    height: 80%;
+                    object-fit: contain;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    h1{
+                        font-family:'Times New Roman', Times, serif;
+                        
+                    }
+                    p{
+                        font-family:'Times New Roman', Times, serif;
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+        
+            .right{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 10px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-family: 'Times New Roman', Times, serif;
+                    span{
+                        color: $maron;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        
+        
+            
+        }
+        
+        .homepage-nav{
+          
+            width: 100%;
+            background-color: $maron;
+            font-family:'Times New Roman', Times, serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                width: 90%;
+                justify-content: space-between;
+                list-style: none;
+                .more-nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 23px;
+                    font-weight: 400;
+                    padding: 5px  10px;
+                    &:hover{
+                        color: rgba(255, 148, 148, 0.475);
+                    }
+                }
+            }
+        }
+        main{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                position: relative;
+                font-family: 'Righteous', sans-serif;
+                z-index: 1;
+                display: flex;
+                align-self: center;
+                color: $white;
+                font-size: 100px;
+                font-weight: 300;
+                text-align: center;
+                text-transform: capitalize;
+                filter: drop-shadow(2px 1px 10px $black);
+                transform: translateY(-20%);
+            }
+            img{
+              
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+               
+
+            }
+        }
+
+    }
+    .page2{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #20202d;
+        font-family: 'Righteous', sans-serif;
+        
+        div{
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+            color: $white;
+            h1{
+                margin-top: 10%;
+                font-size: 100px;
+                text-align: center;
+                text-transform:uppercase;
+                font-size: 700;
+                
+              
+                filter: drop-shadow( 4px 2px 0px gray);
+            }
+            h2{
+                font-size: 30px;
+                font-family: 'Cabin', sans-serif;
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 300;
+              font-family: 'Times New Roman', Times, serif;  
+            }
+        }
+        
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+      
+       
+    }
+    .page3{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #20202d;
+        font-family: 'Righteous', sans-serif;
+        
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+
+    @media (max-width: 869px) {
+        .page1{
+            
+    
+    
+         
+            .homepage-header{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-self: center;
+                height: 95px;
+                width: 95%;
+                background-color: $white;
+                
+                .left{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    img{
+                        height: 80%;
+                        object-fit: contain;
+                    }
+                    div{
+                        
+                        h1{
+                            font-family:'Times New Roman', Times, serif;
+                            
+                        }
+                        p{
+                            font-family:'Times New Roman', Times, serif;
+                            font-style: italic;
+                            font-size: 16px;
+                        }
+                    }
+                    
+                }
+            
+                .right{
+                    
+                    div{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                        span{
+                            color: $maron;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            
+            
+                
+            }
+            
+            .homepage-nav{
+              
+                width: 100%;
+                background-color: $maron;
+                font-family:'Times New Roman', Times, serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 64px;
+                    width: 90%;
+                    justify-content: space-between;
+                    list-style: none;
+                    .more-nav{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 5px  10px;
+                        &:hover{
+                            color: rgba(255, 148, 148, 0.475);
+                        }
+                    }
+                }
+            }
+            main{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    
+                    font-size: 90px;
+                    font-weight: 300;
+                    
+                }
+                
+            }
+    
+        }
+
+
+
+
+        .page2{
+           
+            div{
+                color: $white;
+                h1{
+                    margin-top: 15%;
+                    font-size: 70px;
+                    font-size: 600;
+                }
+                h2{
+                    font-size: 25px;
+                    font-family: 'Cabin', sans-serif;
+                    text-align: center;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 300;
+                  font-family: 'Times New Roman', Times, serif;  
+                }
+            }
+        }
+
+
+        .page3{
+            min-height: 100px;
+            background-color: #e9eef4;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit:contain;
+            }
+        }
+    }
+
